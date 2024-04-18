@@ -14,28 +14,28 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
 
-//#include "logo.h"
+#include "logo.h"
 
 // OLED LCD display
-// https://github.com/igrr/esp8266-oled-ssd1306
-#include <Wire.h>
-//#include "SSD1306.h"
 
-/*
-#define I2C_SCL 4
-#define I2C_SDA 5
+#include <Wire.h>
+#include "SSD1306.h"
+
+
+#define I2C_SCL 5
+#define I2C_SDA 6
 
 #define DISPLAY_MAX_W 240
 #define DISPLAY_MAX_H 135
-*/
+
 
 //SSD1306 display(0x3c, I2C_SDA, I2C_SCL);
 //
 #define WIFI_CHANNEL_SWITCH_INTERVAL  (500)
 #define WIFI_CHANNEL_MAX               (13)
 
-const char* ssid = "XXXXXXX";
-const char* password = "XXXXXXXXXXXX";
+const char* ssid = "Vibe4";
+const char* password = "orangeguppy202";
 
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_RST);
 
